@@ -22,7 +22,7 @@ class G81Relative
     center = points[24]
     top_left, top_middle, top_right, middle_left,
       middle_right, bottom_left,
-      bottom_center, bottom_right = points.values_at(0,3,6,21,27,42,45,48).map{|x| (x - center).round(3)}
+      bottom_center, bottom_right = points.values_at(0,3,6,21,27,42,45,48).map{|x| (x - center).round(3)/0,5*360}
 
     %Q{
       #{top_left}\t#{top_middle}\t#{top_right}
